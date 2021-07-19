@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = prompt('Nhập từ cần tìm:')
+    let check = false
+    let eng = ['green', 'blue', 'red', 'purple', 'yellow', 'orange', 'white', 'black', 'brown', 'pink']
+    let vn = ['lục', 'lam', 'đỏ', 'tím', 'vàng', 'cam', 'trắng', 'đen', 'nâu', 'hồng']
+
+    for (let x = 0; x < eng.length; x++) {
+        if (value === eng[x]) {
+            check = true
+            alert(vn[x])
+        }
+    }
+    if (check === false) {
+        alert('Không tìm thấy')
+    }
+</script>
+</body>
+</html>
